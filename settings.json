@@ -1,0 +1,96 @@
+{
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono Light",
+  "editor.lineHeight": 1.2,
+  "editor.lineNumbers": "relative",
+  "editor.fontWeight": "normal",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontSize": 13,
+  "update.mode": "manual",
+  "editor.tabSize": 2,
+  "editor.dragAndDrop": false,
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "all",
+  "vim.easymotion": true,
+  "vim.leader": " ",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["references-view.findReferences"]
+    },
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+    // { "before": ["leader", "w"], "commands": [":w!"] },
+    // { "before": ["leader", "q"], "commands": [":q!"] },
+    // { "before": ["leader", "x"], "commands": [":x!"] }
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] }
+  ],
+  "redhat.telemetry.enabled": true,
+  "http.proxySupport": "fallback",
+  "http.proxyAuthorization": null,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "http.proxy": "http://internet.ford.com:83",
+  "prettier.endOfLine": "auto",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.settings.applyToAllProfiles": [],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.documentSelectors": ["*.{js,ts,jsx,tsx,scss,css,html,htm}"],
+  "json.schemas": [],
+  "workbench.colorTheme": "Darcula",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.automationProfile.osx": {},
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.rulers": [100],
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[typescriptreact]": {},
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative"
+}
